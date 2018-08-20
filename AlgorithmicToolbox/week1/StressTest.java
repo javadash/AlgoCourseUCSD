@@ -1,3 +1,4 @@
+package week1;
 
 public class StressTest {
 	public static void StressTester(int length, int maxValue) {
