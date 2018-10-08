@@ -29,4 +29,3 @@ public class FibonacciLastDigit {
         System.out.println(c);
     }
 }
-
