@@ -3,6 +3,7 @@ import java.util.*;
 import java.io.*;
 
 public class MaxPairwiseProduct {
+	// Algorithm for total comparisons: n^2;
     static long getMaxPairwiseProduct(int[] numbers) {
         long max_product = 0;
         int n = numbers.length;

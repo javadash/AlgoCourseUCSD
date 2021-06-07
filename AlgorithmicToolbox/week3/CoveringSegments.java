@@ -24,7 +24,7 @@ public class CoveringSegments {
     	}
 
     	/**
-    	 * Arrays stream seam to be important
+    	 * Arrays stream seems to be important
     	 * See FractionalKnapsack code also
     	 */
     	 int[] points = Arrays.stream(pointsList.toArray(new Integer[0]))

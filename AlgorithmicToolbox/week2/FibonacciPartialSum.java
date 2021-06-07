@@ -2,7 +2,7 @@ package week2;
 import java.util.*;
 
 public class FibonacciPartialSum {
-	private static List<Long> al= new ArrayList<Long>();  
+	private static List<Long> al= new ArrayList<Long>();
 	private static long getSequenceLength(long m) {
         long previous = 0;
         al.add(previous);

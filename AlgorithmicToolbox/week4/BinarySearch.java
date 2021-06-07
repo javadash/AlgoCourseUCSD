@@ -11,7 +11,7 @@ public class BinarySearch {
     }
     
     static int binarySearchHelper(int[] a, int l, int r, int x){
-    	int middle = (l + r) / 2;
+    	int middle = l + (r - l) / 2;
     	if (x > a[r] || x < a[l]) return -1;
     	if (r - l == 0 && a[l] != x) return -1;
         

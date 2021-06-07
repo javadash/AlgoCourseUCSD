@@ -9,12 +9,13 @@ public class StressTest {
 				numArray[i] = (int) (maxValue*Math.random());
 			}
 			printArray(numArray);
-			long result1 = MaxPairwiseProduct.getMaxPairwiseProduct(numArray);
+			long result1 = MaxPairwiseProductFaster.getMaxPairwiseProduct(numArray);
 			long result2 = MaxPairwiseProductFast.getMaxPairwiseProduct(numArray);
 			if (result1 == result2){
 				System.out.println("OK");
 			} else {
 				System.out.println("Wrong result: " + result1 + " " + result2);
+				break;
 			}
 		}
 	}
@@ -28,7 +29,7 @@ public class StressTest {
 	      System.out.println();
 	  }
 	public static void main(String args[]) {
-		StressTester(5, 9);
+		StressTester(100, 100000);
 	}
 
 }

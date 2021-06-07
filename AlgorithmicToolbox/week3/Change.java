@@ -13,6 +13,10 @@ public class Change {
     	}
         return numberOfCoins;
     }
+    
+    public int change (int money) {
+    	return (money / 10) + (money % 10) / 5 + (money % 5);
+    }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

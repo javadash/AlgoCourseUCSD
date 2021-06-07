@@ -12,7 +12,7 @@ public class FibonacciSumSquares {
         do {
             long tmp_previous = previous;
             previous = current;
-            current = (tmp_previous + current) % m;
+            current = (tmp_previous + current) % m; // Getting the modulo of an intermediate step instead of computing the result
             al.add(current);
             i++;
         } while (previous != 0 || current != 1);

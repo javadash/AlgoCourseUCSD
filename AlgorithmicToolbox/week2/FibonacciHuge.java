@@ -20,7 +20,7 @@ public class FibonacciHuge {
     }
     
 	/**
-	 * This solution works by using pisano numbers and find the length of the seqeunce for the module
+	 * This solution works by using pisano numbers and finds the length of the seqeunce for the module
 	 * then the sequence is used to find the module for the fibonacci number
 	 * @param n this is the fibonacci number being sought
 	 * @param m this is the module used
