@@ -10,7 +10,7 @@ public class FastScanner {
 	BufferedReader br;
 	StringTokenizer st;
 
-	FastScanner(InputStream stream) {
+	public FastScanner(InputStream stream) {
 		try {
 			br = new BufferedReader(new InputStreamReader(stream));
 		} catch (Exception e) {
@@ -29,7 +29,8 @@ public class FastScanner {
 		return st.nextToken();
 	}
 
-	int nextInt() {
+	public int nextInt() {
+		System.out.println("Enter input: ");
 		return Integer.parseInt(next());
 	}
 		

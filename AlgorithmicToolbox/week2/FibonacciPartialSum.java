@@ -21,6 +21,7 @@ public class FibonacciPartialSum {
 	
 	private static long getFibonacciSum(long n) {
     	long sequenceLength = getSequenceLength(10);
+    	//we use the property that the sum of the first n Fibonacci numbers is equal to the (n+2)th Fibonacci number minus 1. 
     	int mod = (int)((n+2) % sequenceLength); // Calculating index of the fibonaccis sums last digit
     	long fiboNumber = al.get(mod);
     	if (fiboNumber == 0) return 9;
