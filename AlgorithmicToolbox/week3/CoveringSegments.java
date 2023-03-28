@@ -1,6 +1,15 @@
 package week3;
 import java.util.*;
 
+
+/*
+ * Covering Segments by Points Problem 
+ * Find the minimum number of points needed to cover all given segments on a line.
+ * You are responsible for collecting signatures from all tenants in a building.
+ * For each tenant, you know a period of time when he or she is at home.
+ * You would like to collect all signatures by visiting the building as few times as possible.
+ */
+
 public class CoveringSegments {
 
     private static int[] optimalPoints(Segment[] segments) {
@@ -22,6 +31,8 @@ public class CoveringSegments {
     			i++;
     		}
     	}
+    	
+    	
 
     	/**
     	 * Arrays stream seems to be important

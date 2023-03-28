@@ -32,5 +32,6 @@ public class MaxProduct {
 		}
 		maxProd = max * nextMax;
 		System.out.println(maxProd);
+		s.close();
 	}
 }

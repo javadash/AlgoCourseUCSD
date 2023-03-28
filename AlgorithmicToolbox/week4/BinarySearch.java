@@ -7,6 +7,7 @@ public class BinarySearch {
     static int binarySearch(int[] a, int x) {
     	int left = 0;
     	int right = a.length;
+    	// sort array
     	return binarySearchHelper(a, left, right-1, x);
     }
     

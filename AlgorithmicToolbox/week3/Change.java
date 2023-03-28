@@ -22,7 +22,7 @@ public class Change {
         Scanner scanner = new Scanner(System.in);
         int m = scanner.nextInt();
         System.out.println(getChange(m));
-
+        scanner.close();
     }
 }
 
