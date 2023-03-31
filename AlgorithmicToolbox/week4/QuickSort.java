@@ -2,12 +2,11 @@ package week4;
 import java.io.*;
 import java.util.*;
 
-public class Sorting {
+public class QuickSort {
     private static Random random = new Random();
 
     private static int[] partition3(int[] a, int l, int r) {
       //write your code here
-
       int m1 = l;
       int m2 = r;
       int pivot = a[l];

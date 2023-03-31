@@ -24,3 +24,6 @@ hs_err_pid*
 /bin/
 .classpath
 test/FibonacciLastDigitTest.java
+.idea/vcs.xml
+.idea/misc.xml
+*.xml
