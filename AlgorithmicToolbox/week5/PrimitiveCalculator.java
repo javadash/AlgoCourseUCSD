@@ -13,22 +13,36 @@ public class PrimitiveCalculator {
             dp[i] = Math.min(a, Math.min(b, c)) + 1;
         }
         sequence.add(n);
-        while (n > 1) { 
-            if(n / 2 >= 1 && dp[n] - 1 == dp[n / 2]) {
-                sequence.add(n / 2);
-                n /= 2;
-            }
-            else if(n / 3 >= 1 && dp[n] - 1 == dp[n / 3]) {
-                sequence.add(n / 3);
-                n /= 3;
-            }
-            else if(n - 1 >= 1 && dp[n] - 1 == dp[n - 1]) {
+        while (n > 1) {
+        	if(dp[n-1] == dp[n] - 1) {
                 sequence.add(n - 1);
                 n -= 1;
             }
+        	else if(n % 2 == 0 && dp[n] - 1 == dp[n / 2]) {
+                sequence.add(n / 2);
+                n /= 2;
+            }
+            else if(n % 3 == 0 && dp[n] - 1 == dp[n / 3]) {
+                sequence.add(n / 3);
+                n /= 3;
+            }
+            
         }
         Collections.reverse(sequence);
         return sequence;
+    }
+    
+    public static int calculator(int n) {
+    	int[] dp = new int[n + 1];
+    	dp[1] = 0;
+    	
+    	for (int j = 2; j <= n; j++) {
+    		dp[j] = 1 + dp[j - 1];
+    		int a = (j % 2) == 0 ? 1 + dp[j / 2] : Integer.MAX_VALUE;
+            int b = (j % 3) == 0 ? 1 + dp[j / 3] : Integer.MAX_VALUE;
+            dp[j] = Math.min(a, Math.min(b, dp[j] ));
+    	}
+    	return dp[n];
     }
 
     public static void main(String[] args) {
@@ -39,6 +53,10 @@ public class PrimitiveCalculator {
         for (Integer x : sequence) {
             System.out.print(x + " ");
         }
+        
+        
+//        int result = calculator(n);
+//        System.out.println(result);
     }
 }
 
